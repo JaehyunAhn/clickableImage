@@ -10,7 +10,8 @@ Sogang University (c) All rights reserved
 """
 
 # get image list
-image_dir = collect_images('./outputData')
+image_dir = collect_images('./testData')
 
 # open image and point out images
-load_and_point_images(image_dir)
+load_and_point_images(image_dir,
+                      file_path='./testData')

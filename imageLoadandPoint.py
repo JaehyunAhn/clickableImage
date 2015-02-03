@@ -18,8 +18,9 @@ def collect_images(dir_path):
     return images
 
 # Load images and point it out
-def load_and_point_images(image_dir):
-    f = open("testResult.txt", 'a')
+def load_and_point_images(image_dir, file_path):
+    file_name = file_path + '/result.txt'
+    f = open(file_name, 'a')
     print '%d images will be tested' % len(image_dir)
     count = 1
 
